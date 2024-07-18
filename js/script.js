@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            newTask: null,
             todo: [
                 {
                     text: 'Fare l\'esercizio di Boolean',
