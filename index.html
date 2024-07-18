@@ -18,7 +18,8 @@
         <main>
             <ul class="list-group" v-for="(i, index) in todo">
                 <li class="list-group-item d-flex justify-content-between align-items-center bg"
-                    :class="i.done === true ? 'text-decoration-line-through': ''">
+                    :class="i.done === true ? 'text-decoration-line-through': ''"
+                    @click="i.done === false ? i.done = true : i.done = false">
                     <p>{{ i.text }}</p>
                     <div>
                         <button class="btn btn-danger btn-sm" @click="deleteTask(index)">Elimina</button>
@@ -26,7 +27,7 @@
                 </li>
             </ul>
             <div class="list-group-item d-flex justify-content-start align-items-center bg my-3">
-                <input type="text" v-model='newTask' placeholder="Nuova task">
+                <input type="text" v-model='newTask' placeholder="Nuova task" @keyup.enter="addTask">
                 <button class="btn btn-primary mx-2" @click="addTask(index)">Add</button>
             </div>
     </div>
