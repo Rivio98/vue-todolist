@@ -9,3 +9,15 @@ MILESTONE 3 Predisporre un campo di input testuale e un pulsante "aggiungi": cli
 Bonus: 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 Buon lavoro e buon divertimento!
 
+1 creare layout statico
+
+2 implementare vue 
+
+3 creare array di oggetti 
+
+4 andare a sosituire tramite vue le li delle tASK ciclandole con un v-for direttamente nel html
+
+5 aggiungere gli eventi click ad x con evento removeTask creato da me che va a rimuovere la task
+
+6 aggiungere un campo input dove tramite vue andrò a recuperare il valore inserito ed pusho dentro l'arrey di oggetti quindi aggiunge una task
+
