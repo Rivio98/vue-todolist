@@ -16,48 +16,22 @@
             <h1 class="text-center my-3">Lista delle Cose da Fare</h1>
         </header>
         <main>
-            <ul class="list-group">
+            <ul class="list-group" v-for="(i, index) in todo">
                 <li class="list-group-item d-flex justify-content-between align-items-center bg">
-                    Fare l'esercizio di Boolean
+                    <p>{{ i.text }}</p>
                     <div>
                         <button class="btn btn-danger btn-sm">Elimina</button>
                     </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center bg">
-                    Comprare il pane
-                    <div>
-                        <button class="btn btn-danger btn-sm">Elimina</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center bg">
-                    Studiare
-                    <div>
-                        <button class="btn btn-danger btn-sm">Elimina</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center bg">
-                    Giocare col gatto
-                    <div>
-                        <button class="btn btn-danger btn-sm">Elimina</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center bg">
-                    Giocare a Elden Ring
-                    <div>
-                        <button class="btn btn-danger btn-sm">Elimina</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center bg my-3">
-                    <input type="text" id="newTask" placeholder="Nuova task">
-                    <button class="btn btn-primary mx-2">Add</button>
                 </li>
             </ul>
+            <div class="list-group-item d-flex justify-content-start align-items-center bg my-3">
+                <input type="text" id="newTask" placeholder="Nuova task">
+                <button class="btn btn-primary mx-2">Add</button>
+            </div>
     </div>
     </div>
     </main>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
