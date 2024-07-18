@@ -21,7 +21,7 @@
                     :class="i.done === true ? 'text-decoration-line-through': ''">
                     <p>{{ i.text }}</p>
                     <div>
-                        <button class="btn btn-danger btn-sm">Elimina</button>
+                        <button class="btn btn-danger btn-sm" @click="deleteTask(index)">Elimina</button>
                     </div>
                 </li>
             </ul>
