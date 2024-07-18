@@ -30,6 +30,14 @@ createApp({
     methods: {
         deleteTask(index) {
             this.todo.splice(index, 1);
+        },
+        addTask() {
+            const newObj = {
+                text: this.newTask,
+                done: false
+            }
+            this.todo.push(newObj);
+            this.newTask = null;
         }
     }
-}).mount('#app')
+}).mount('#app');

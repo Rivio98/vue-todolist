@@ -26,8 +26,8 @@
                 </li>
             </ul>
             <div class="list-group-item d-flex justify-content-start align-items-center bg my-3">
-                <input type="text" id="newTask" placeholder="Nuova task">
-                <button class="btn btn-primary mx-2">Add</button>
+                <input type="text" v-model='newTask' placeholder="Nuova task">
+                <button class="btn btn-primary mx-2" @click="addTask(index)">Add</button>
             </div>
     </div>
     </div>
