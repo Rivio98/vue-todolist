@@ -26,9 +26,9 @@
                     </div>
                 </li>
             </ul>
-            <div class="list-group-item d-flex justify-content-start align-items-center bg my-3">
-                <input type="text" v-model='newTask' placeholder="Nuova task" @keyup.enter="addTask">
-                <button class="btn btn-primary mx-2" @click="addTask(index)">Add</button>
+            <div class="list-group-item d-flex justify-content-start align-items-center bg my-3 py-2">
+                <input type="text" v-model='newTask' placeholder="Nuova task" @keyup.enter="addTask" class="mx-2">
+                <button class="btn btn-primary" @click="addTask(index)">Add</button>
             </div>
     </div>
     </div>
