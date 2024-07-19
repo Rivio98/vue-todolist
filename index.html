@@ -18,11 +18,10 @@
         <main>
             <ul class="list-group" v-for="(i, index) in todo">
                 <li class="list-group-item d-flex justify-content-between align-items-center bg"
-                    :class="i.done === true ? 'text-decoration-line-through': ''"
-                    @click="i.done === false ? i.done = true : i.done = false">
+                    :class="i.done ? 'text-decoration-line-through': ''" @click="i.done = !i.done">
                     <p>{{ i.text }}</p>
                     <div>
-                        <button class="btn btn-danger btn-sm" @click="deleteTask(index)">Elimina</button>
+                        <button class="btn btn-danger btn-sm" @click.stop="deleteTask(index)">Elimina</button>
                     </div>
                 </li>
             </ul>
